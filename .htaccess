@@ -1,0 +1,4 @@
+RewriteCond %{HTTP_REFERER} !^http(s)?://player.gooplay.xyz [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://www.gooplay.xyz [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://pro.gooplay.xyz [NC]       
+RewriteRule \.(MP4|mp4|webm|flv|avi|3gp|mp3|mvk|php|embed|html|ts|m3u8)$ - [NC,F]
